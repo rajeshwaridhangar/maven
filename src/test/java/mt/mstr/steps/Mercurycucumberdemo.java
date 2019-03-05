@@ -17,6 +17,8 @@ public class Mercurycucumberdemo {
 	@When("^user opens \"(.*)\" browser$")
 	public String openbrowser(String browser)
 	{
+			System.out.println("openbrowser");
+	
 		System.setProperty("webdriver.chrome.driver","D:\\selenium\\chromedriver_win32 (14)\\chromedriver.exe");
 		 driver=new ChromeDriver();
 		return browser;
